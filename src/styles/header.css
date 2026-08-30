@@ -1,0 +1,66 @@
+:root {
+    --background-main: #f8f6f0;
+    --background-section-2-specific: #F4EEE5;
+    --background-card: #ffffff;
+    --text-primary: #1f1f1f;
+    --text-secondary: #5c5b59;
+    --orange-primary: #ff7347;
+    --orange-light: #ffebe4;
+    --photo-frame: #f9d8ce;
+    --icon-green: #379d67;
+    --icon-blue: #4f6fec;
+    --icon-purple: #8563e6;
+    --border-color: #e5e3dc;
+    --icon-dark-orange: #c85327;
+    --icon-cyan: #3fa1cc;
+    --white: #fff;
+    --footer-background: #2B2B2B;
+}
+
+header {
+    background: var(--background-main);
+    width: 100%;
+    border-bottom: var(--border-color) 1px solid;
+    justify-content: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.125rem;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 900;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.logo__dot {
+    color: var(--orange-primary);
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.header__choice {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.header__test {
+    text-decoration: none;
+    background: var(--text-primary);
+    color: var(--background-card);
+    padding: 0.75rem 0.875rem;
+    border-radius: 2.5rem;
+}

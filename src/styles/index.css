@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --background-main: #f8f6f0;
+    --background-section-2-specific: #F4EEE5;
+    --background-card: #ffffff;
+    --text-primary: #1f1f1f;
+    --text-secondary: #5c5b59;
+    --orange-primary: #ff7347;
+    --orange-light: #ffebe4;
+    --photo-frame: #f9d8ce;
+    --icon-green: #379d67;
+    --icon-blue: #4f6fec;
+    --icon-purple: #8563e6;
+    --border-color: #e5e3dc;
+    --icon-dark-orange: #c85327;
+    --icon-cyan: #3fa1cc;
+    --white: #fff;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-size: clamp(0.8rem, 0.4vw + 0.7rem, 1.125rem);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--background-main);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+section {
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.title-text {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+}
+
+.subtitle-text {
+    color: var(--orange-primary);
+    text-transform: uppercase;
+    font-weight: 700;
+}
