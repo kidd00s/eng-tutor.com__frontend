@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/footer.css">
     <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
@@ -42,10 +43,7 @@
                         <p class="about-content__subtitle">
                             <span class="about__dot"></span>Онлайн-уроки з будь-якої точки світу
                         </p>
-                        <h1 class="about-content__title">Макс — <br>
-                            викладач <br>
-                            англійської
-                        </h1>
+                        <h1 class="about-content__title">Індивідуальні уроки англійської<br>під ваші цілі</h1>
 
                         <p class="about-content__info">
                             Філолог-перекладач з 4+ роками досвіду. <br>
@@ -141,13 +139,13 @@
                                 цікаві уроки. Маю ступінь магістра з філології за спеціалізацією
                                 «англійська та німецька мови, переклад і лінгвістика».
                             </p>
-    
+
                             <p class="describe-hidden__text">
                                 За останні чотири роки я працював зі студентами різного віку та рівня,
                                 допомагаючи покращити розмовні навички, граматику, словниковий запас,
                                 вимову та впевненість у використанні англійської.
                             </p>
-    
+
                             <p class="describe-hidden__text">
                                 Мій підхід поєднує сучасні комунікативні методики зі структурованою
                                 граматичною практикою — розвиваю всі чотири ключові навички:
@@ -325,83 +323,51 @@
             <!-- Section 5 -->
             <section class="opinion" id="opinion">
                 <div class="container">
-                    <p class="opinion__subtitle subtitle-text">
-                        Відгуки
-                    </p>
 
                     <div class="opinion-row">
-                        <h2 class="opinion__title title-text">
-                            Що кажуть студенти
-                        </h2>
+                        <div class="opinion-text">
+                            <p class="opinion__subtitle subtitle-text">
+                                Відгуки
+                            </p>
 
-                        <button class="opinion__post">
-                            Залишити відгук
-                        </button>
+                            <h2 class="title-text opinion__title">
+                                Що кажуть студенти
+                            </h2>
+                        </div>
                     </div>
 
 
-                    <div class="opinion-reviews">
-                        <div class="opinion-reviews__review">
-                            <div class="opinion-rating">
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="swiper-img" src="/img/opinion_1.png" alt="">
                             </div>
-                            <p class="opinion__text">
-                                За півроку занять з Максом почала
-                                вільно спілкуватися на роботі
-                                англійською. Дуже практичний
-                                підхід!
-                            </p>
 
-                            <div class="opinion-user">
-                                <span class="opinion-user__profile">о</span>
-                                <p class="opinion-user__name">Ольга</p>
+                            <div class="swiper-slide">
+                                <img class="swiper-img" src="/img/opinion_2.png" alt="">
                             </div>
+
+                            <div class="swiper-slide">
+                                <img class="swiper-img" src="/img/opinion_3.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img class="swiper-img" src="/img/opinion_4.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img class="swiper-img" src="/img/opinion_5.png" alt="">
+                            </div>
+                            
                         </div>
+                        
+                        <div class="swiper-pagination"></div>
 
-                        <div class="opinion-reviews__review">
-                            <div class="opinion-rating">
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                            </div>
-                            <p class="opinion__text">
-                                Готувався до співбесіди — Макс
-                                підібрав саме ту лексику, яка була
-                                потрібна. Результат перевершив
-                                очікування.
-                            </p>
-
-                            <div class="opinion-user">
-                                <span class="opinion-user__profile">д</span>
-                                <p class="opinion-user__name">Дмитро</p>
-                            </div>
-                        </div>
-
-                        <div class="opinion-reviews__review">
-                            <div class="opinion-rating">
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                                <span class="star__active">★</span>
-                            </div>
-                            <p class="opinion__text">
-                                Уроки цікаві та живі, ніколи не
-                                нудно. Граматику нарешті зрозуміла
-                                по-справжньому.
-                            </p>
-
-                            <div class="opinion-user">
-                                <span class="opinion-user__profile">а</span>
-                                <p class="opinion-user__name">Анна</p>
-                            </div>
-                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                        
+                        <!-- <img src="/img/left-circle.svg" alt="" class="swiper__prev"> -->
                     </div>
                 </div>
             </section>
@@ -423,9 +389,12 @@
                         </p>
 
                         <div class="request-content-box">
-                            <a target="_blank" href="" class="request-content__test content-btn">Пройти тест на рівень</a>
-                            <a target="_blank" href="https://t.me/postmortema" class="request-content__telegram content-btn">Написати в Telegram</a>
-                            <a target="_blank" href="https://wa.me/380964785183" class="request-content__whatsapp content-btn">Написати у WhatsApp</a>
+                            <a target="_blank" href="" class="request-content__test content-btn">Пройти тест на
+                                рівень</a>
+                            <a target="_blank" href="https://t.me/postmortema"
+                                class="request-content__telegram content-btn">Написати в Telegram</a>
+                            <a target="_blank" href="https://wa.me/380964785183"
+                                class="request-content__whatsapp content-btn">Написати у WhatsApp</a>
                         </div>
                     </div>
 
@@ -469,16 +438,20 @@
 
                     <div class="footer-info-contacts">
                         <p class="footer__title">Контакти</p>
-                        <a target="_blank" href="mailto:rirader222@gmail.com" class="footer__subtitle">Email: rirader222@gmail.com</a>
-                        <a target="_blank" href="https://t.me/postmortema" class="footer__subtitle">Telegram: @postmortema</a>
-                        <a target="_blank" href="https://www.instagram.com/tryna_be_patient" class="footer__subtitle">Instagram: @tryna_be_patient</a>
-                        <a target="_blank" href="https://wa.me/380964785183" class="footer__subtitle">WhatsApp: +380 96 478 5183</a>
+                        <a target="_blank" href="mailto:rirader222@gmail.com" class="footer__subtitle">Email:
+                            rirader222@gmail.com</a>
+                        <a target="_blank" href="https://t.me/postmortema" class="footer__subtitle">Telegram:
+                            @postmortema</a>
+                        <a target="_blank" href="https://www.instagram.com/tryna_be_patient"
+                            class="footer__subtitle">Instagram: @tryna_be_patient</a>
+                        <a target="_blank" href="https://wa.me/380964785183" class="footer__subtitle">WhatsApp: +380 96
+                            478 5183</a>
                     </div>
                 </div>
 
                 <div class="footer-row">
                     <a class="footer-row__rights">
-                        © 2026 Max English Tutor. Усі права захищено. 
+                        © 2026 Max English Tutor. Усі права захищено.
                     </a>
 
                     <a class="footer-row__policy">
@@ -490,7 +463,8 @@
     </div>
 
     <script type="module" src="/src/scripts/app.js" defer></script>
-    <script src="/src/scripts/popup.js" defer></script>
+    <script type="module" src="/src/scripts/popup.js" defer></script>
+    <script type="module" src="/src/scripts/swiper.js" defer></script>
 </body>
 
 </html>
